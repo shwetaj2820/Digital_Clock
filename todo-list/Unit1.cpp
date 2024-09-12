@@ -17,6 +17,10 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 void __fastcall TForm1::AddButtonClick(TObject *Sender)
 {
 	String txt = AddTask->Text;
+	if(txt == ""){
+		
+// 		handling the function for empty string entered
+	}
 	TaskList->Items->Add(txt);
     AddTask->Text="";
 }
